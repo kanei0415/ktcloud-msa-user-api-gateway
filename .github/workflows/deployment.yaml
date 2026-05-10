@@ -36,8 +36,8 @@ jobs:
 
       - name: Update Image Tag
         run: |
-          cd manifests/
-          sed -i "s|tag:.*|tag: ${{ github.sha }}|g" Apps/user-api-gateway/values-release.yaml
+          cd user-api-gateway
+          sed -i "s|tag:.*|tag: ${{ github.sha }}|g" values-release.yaml
 
       - name: Commit and Push
         run: |
