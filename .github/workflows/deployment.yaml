@@ -31,7 +31,7 @@ jobs:
       - name: Checkout Manifest Repo
         uses: actions/checkout@v4
         with:
-          repository: 'kanei0415/ktcloud-local-argocd-manifest'
+          repository: 'kanei0415/ktcloud-market-msa-manifest-values'
           token: ${{ secrets.GH_PAT }}
 
       - name: Update Image Tag
